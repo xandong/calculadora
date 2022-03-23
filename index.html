@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body onselectstart="return false">
+    <header class="header">
+      <section class="header-box">
+        <h1>Calculadora de operações básicas</h1>
+      </section>
+    </header>
+    <main class="main">
+      <section class="section-box">
+        <div class="box-main">
+          <div class="box-tela">
+            <p id="display-operador" class="box-return"></p>
+            <p id="display" class="box-return">Return</p>
+          </div>
+          <div class="box-inserir">
+            <div class="box-num">
+              <div class="box-content">
+                <div id="igual" class="key box-igual" onclick="igual()">=</div>
+                <div id="key0" class="key" onclick="clickNum(0)">0</div>
+                <div id="del" class="key box-reset" onclick="reset(0)">C</div>
+                <div id="sum" class="key box-op" onclick="selectOperator('+')">
+                  +
+                </div>
+              </div>
+
+              <div class="box-content">
+                <div id="key7" class="key" onclick="clickNum(7)">7</div>
+                <div id="key8" class="key" onclick="clickNum(8)">8</div>
+                <div id="key9" class="key" onclick="clickNum(9)">9</div>
+                <div id="sub" class="key box-op" onclick="selectOperator('-')">
+                  -
+                </div>
+              </div>
+              <div class="box-content">
+                <div id="key4" class="key" onclick="clickNum(4)">4</div>
+                <div id="key5" class="key" onclick="clickNum(5)">5</div>
+                <div id="key6" class="key" onclick="clickNum(6)">6</div>
+                <div id="div" class="key box-op" onclick="selectOperator('/')">
+                  /
+                </div>
+              </div>
+              <div class="box-content">
+                <div id="key1" class="key" onclick="clickNum(1)">1</div>
+                <div id="key2" class="key" onclick="clickNum(2)">2</div>
+                <div id="key3" class="key" onclick="clickNum(3)">3</div>
+                <div id="mult" class="key box-op" onclick="selectOperator('*')">
+                  *
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Desenvolvido por
+        <em><a href="https://github.com/xandong">Alexandre Gurgel</a></em>
+      </p>
+    </footer>
+  </body>
+</html>
